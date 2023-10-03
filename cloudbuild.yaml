@@ -1,0 +1,7 @@
+# create/start build: gcloud builds submit --config cloudbuild.yaml .
+#
+steps:
+  - name: ghcr.io/djschaap/filldisk:main
+    env:
+      - START_SIZE=87040
+      - MAX_ITER=15
